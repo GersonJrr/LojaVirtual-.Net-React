@@ -22,7 +22,7 @@ namespace ProdutoApi.Repositories
             return await _context.Categorias.Include(x => x.Produtos).ToListAsync();
         }
 
-        public async Task<Categoria> GetById(int id)
+        public async Task<Categoria> GetCategoriaById(int id)
         {
             return await _context.Categorias.Where(p => p.CategoriaId == id).FirstOrDefaultAsync();
         }
@@ -43,7 +43,7 @@ namespace ProdutoApi.Repositories
 
         public async Task<Categoria> Delete(int id)
         {
-            var product = await GetById(id);
+            var product = await GetCategoriaById(id);
             _context.Categorias.Remove(product);
             await _context.SaveChangesAsync();
             return product;

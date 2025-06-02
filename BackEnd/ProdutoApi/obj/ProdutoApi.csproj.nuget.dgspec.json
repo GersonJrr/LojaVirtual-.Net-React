@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Junior\\Desktop\\LojaVirtual\\BackEnd\\ProdutoApi\\ProdutoApi\\ProdutoApi.csproj": {}
+    "C:\\Users\\Junior\\Desktop\\Projeto_LojaVirtual\\BackEnd\\ProdutoApi\\ProdutoApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Junior\\Desktop\\LojaVirtual\\BackEnd\\ProdutoApi\\ProdutoApi\\ProdutoApi.csproj": {
+    "C:\\Users\\Junior\\Desktop\\Projeto_LojaVirtual\\BackEnd\\ProdutoApi\\ProdutoApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Junior\\Desktop\\LojaVirtual\\BackEnd\\ProdutoApi\\ProdutoApi\\ProdutoApi.csproj",
+        "projectUniqueName": "C:\\Users\\Junior\\Desktop\\Projeto_LojaVirtual\\BackEnd\\ProdutoApi\\ProdutoApi.csproj",
         "projectName": "ProdutoApi",
-        "projectPath": "C:\\Users\\Junior\\Desktop\\LojaVirtual\\BackEnd\\ProdutoApi\\ProdutoApi\\ProdutoApi.csproj",
+        "projectPath": "C:\\Users\\Junior\\Desktop\\Projeto_LojaVirtual\\BackEnd\\ProdutoApi\\ProdutoApi.csproj",
         "packagesPath": "C:\\Users\\Junior\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Junior\\Desktop\\LojaVirtual\\BackEnd\\ProdutoApi\\ProdutoApi\\obj\\",
+        "outputPath": "C:\\Users\\Junior\\Desktop\\Projeto_LojaVirtual\\BackEnd\\ProdutoApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

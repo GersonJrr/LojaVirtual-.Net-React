@@ -43,7 +43,7 @@ namespace ProdutoApi.Context
                  HasPrecision(12, 2);
 
             mb.Entity<Categoria>()
-              .HasMany(g => g.Produto)
+              .HasMany(g => g.Produtos)
                 .WithOne(c => c.Categoria)
                 .IsRequired()
                   .OnDelete(DeleteBehavior.Cascade);

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YihsYM7qwSk=",
+  "dgSpecHash": "ZWDLDbvi/gs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Junior\\Desktop\\LojaVirtual\\BackEnd\\ProdutoApi\\ProdutoApi\\ProdutoApi.csproj",
+  "projectFilePath": "C:\\Users\\Junior\\Desktop\\Projeto_LojaVirtual\\BackEnd\\ProdutoApi\\ProdutoApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Junior\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\Junior\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",

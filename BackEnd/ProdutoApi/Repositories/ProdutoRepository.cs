@@ -1,47 +1,49 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ProdutoApi.Context;
+using ProdutoApi.Models;
+using ProdutoApi.Repositories.Interfaces;
 
 namespace ProdutoApi.Repositories
 {
-    public class ProdutoRepository
+    public class ProdutoRepository : IProdutoRepository
     {
         private readonly AppDbContext _context;
-        public ProductRepository(AppDbContext context)
+        public ProdutoRepository(AppDbContext context)
         {
             _context = context;
         }
 
-        public async Task<IEnumerable<Product>> GetAll()
+        public async Task<IEnumerable<Produto>> GetAll()
         {
-            var products = await _context.Products.Include(c => c.Category).ToListAsync();
-            return products;
+            var produto = await _context.Produtos.Include(c => c.Categoria).ToListAsync();
+            return produto;
         }
 
-        public async Task<Product> GetById(int id)
+        public async Task<Produto> GetById(int id)
         {
-            return await _context.Products.Include(c => c.Category).Where(p => p.Id == id).FirstOrDefaultAsync();
+            return await _context.Produtos.Include(c => c.Categoria).Where(p => p.CategoriaId == id).FirstOrDefaultAsync();
         }
 
-        public async Task<Product> Create(Product product)
+        public async Task<Produto> Create(Produto produto)
         {
-            _context.Products.Add(product);
+            _context.Produtos.Add(produto);
             await _context.SaveChangesAsync();
-            return product;
+            return produto;
         }
 
-        public async Task<Product> Update(Product product)
+        public async Task<Produto> Update(Produto produto)
         {
-            _context.Entry(product).State = EntityState.Modified;
+            _context.Entry(produto).State = EntityState.Modified;
             await _context.SaveChangesAsync();
-            return product;
+            return produto;
         }
 
-        public async Task<Product> Delete(int id)
+        public async Task<Produto> Delete(int id)
         {
-            var product = await GetById(id);
-            _context.Products.Remove(product);
+            var produto = await GetById(id);
+            _context.Produtos.Remove(produto);
             await _context.SaveChangesAsync();
-            return product;
+            return produto;
         }
     }
 }
