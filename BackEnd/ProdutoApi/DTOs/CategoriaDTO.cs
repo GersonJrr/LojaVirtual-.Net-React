@@ -10,7 +10,7 @@ namespace ProdutoApi.DTOs
         [Required(ErrorMessage = "The Name is Required")]
         [MinLength(3)]
         [MaxLength(100)]
-        public string? Name { get; set; }
+        public string? Nome { get; set; }
 
         public ICollection<Produto>? Produtos { get; set; }
     }

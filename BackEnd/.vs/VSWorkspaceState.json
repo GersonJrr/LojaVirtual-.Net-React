@@ -1,0 +1,9 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ProdutoApi",
+    "\\ProdutoApi\\Context"
+  ],
+  "SelectedNode": "\\ProdutoApi\\Context\\AppDbContext.cs",
+  "PreviewInSolutionExplorer": false
+}

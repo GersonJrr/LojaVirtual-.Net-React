@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+:root {
+  --cor-bege-claro: #f8bf69;
+}
+
+:root {
+  --cor-bege: #ED5729;
+}
+
+
+:root {
+  --font-roboto: 'Roboto', sans-serif;
+  --font-plusjakarta: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  font-family: var(--font-plusjakarta);
+}
