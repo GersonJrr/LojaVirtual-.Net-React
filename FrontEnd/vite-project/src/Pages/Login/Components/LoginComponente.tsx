@@ -1,6 +1,7 @@
 import LogoPizza from '../../../assets/LogoPizza.png'
 import googleIcon from '../../../assets/googleIcon.svg'
 import appleLogo from '../../../assets/appleLogo.svg'
+import { Link } from "react-router-dom";
 
 interface LoginComponenteProps {
   onRegister: () => void
@@ -10,7 +11,9 @@ export default function LoginComponente({ onRegister }: LoginComponenteProps) {
   return (
     <div className="w-full flex flex-col justify-center px-4 overflow-y-auto items-center">
       <div className="w-full h-[100px] flex justify-center mb-6 pr-8">
-        <img src={LogoPizza} alt="Logo Pizza" className="w-[230px] h-[80px]" />
+        <Link to="/">
+          <img src={LogoPizza} alt="Logo Pizza" className="w-[230px] h-[80px]" />
+        </Link>
       </div>
 
       <h2 className="text-2xl font-semibold text-center text-gray-800 mb-5">Login</h2>
@@ -27,7 +30,7 @@ export default function LoginComponente({ onRegister }: LoginComponenteProps) {
         />
         <button
           type="submit"
-          className="w-full bg-[var(--cor-bege)] text-white py-2 rounded-md hover:bg-[var(--cor-bege-claro)] transition"
+          className="w-full bg-[var(--cor-vermelho-bg)] text-white py-2 rounded-md hover:bg-[var(--cor-bege-claro)] transition"
         >
           Entrar
         </button>

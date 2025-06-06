@@ -1,15 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --cor-bege-claro: #f8bf69;
-}
-
-
-:root {
-  --cor-bege: #ED5729;
+  --cor-vermelho-bg: #eb0b0b;
 }
 :root {
-  --cor-bege-bg: #F2EBE8;
+  --cor-bege: #E5E8EB;
+}
+:root {
+  --cor-bege-bg: #FCFAF7;
 }
 
 :root {

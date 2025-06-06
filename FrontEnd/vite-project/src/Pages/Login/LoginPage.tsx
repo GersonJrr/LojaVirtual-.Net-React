@@ -6,7 +6,7 @@ function LoginPage() {
   const [isRegister, setIsRegister] = useState(false)
 
   return (
-    <div className="w-full min-h-screen flex items-center justify-center bg-[var(--cor-bege-claro)] overflow-hidden px-2">
+    <div className="w-full min-h-screen flex items-center justify-center bg-[var(--cor-vermelho-bg)] overflow-hidden px-2">
       <div className="w-full max-w-md h-[560px] bg-white shadow-xl rounded-2xl p-4 sm:p-6 relative overflow-hidden ">
         <div
           className="flex w-[205%] h-full transition-transform duration-500 ease-in-out"

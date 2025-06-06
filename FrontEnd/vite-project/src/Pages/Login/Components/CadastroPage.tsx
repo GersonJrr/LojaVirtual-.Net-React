@@ -1,4 +1,6 @@
 import LogoPizza from '../../../assets/LogoPizza.png'
+import { Link } from "react-router-dom";
+
 
 interface CadastroComponenteProps {
   onBackToLogin: () => void
@@ -8,11 +10,13 @@ export default function CadastroComponente({ onBackToLogin }: CadastroComponente
   return (
     <div className="w-full flex flex-col justify-center items-center ">
       <div className=" h-[100px] mb-6 pr-8">
-        <img
-          src={LogoPizza}
-          alt="Logo Pizza"
-          className="w-[230px] h-[80px]"
-        />
+        <Link to="/">
+          <img
+            src={LogoPizza}
+            alt="Logo Pizza"
+            className="w-[230px] h-[80px]"
+          />
+        </Link>
       </div>
       <h2 className="text-2xl font-semibold text-center text-gray-800 mt-[-30px] mb-2.5">Cadastro</h2>
       <form className="flex flex-col gap-4">
@@ -43,7 +47,7 @@ export default function CadastroComponente({ onBackToLogin }: CadastroComponente
         />
         <button
           type="submit"
-          className="w-full bg-[var(--cor-bege)] text-white py-2 rounded-md hover:bg-[var(--cor-bege-claro)] transition"
+          className="w-full bg-[var(--cor-vermelho-bg)] text-white py-2 rounded-md hover:bg-[var(--cor-bege-claro)] transition"
         >
           Cadastrar
         </button>
