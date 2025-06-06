@@ -21,7 +21,7 @@ namespace ProdutoApi.Repositories
 
         public async Task<Produto> GetById(int id)
         {
-            return await _context.Produtos.Include(c => c.Categoria).Where(p => p.CategoriaId == id).FirstOrDefaultAsync();
+            return await _context.Produtos.Include(c => c.Categoria).Where(p => p.ProdutoId == id).FirstOrDefaultAsync();
         }
 
         public async Task<Produto> Create(Produto produto)

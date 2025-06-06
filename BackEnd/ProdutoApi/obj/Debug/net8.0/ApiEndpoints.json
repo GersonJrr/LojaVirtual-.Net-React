@@ -131,7 +131,7 @@
   },
   {
     "ContainingType": "ProdutoApi.Controllers.ProdutosController",
-    "Method": "Get",
+    "Method": "GetProdutos",
     "RelativePath": "api/Produtos",
     "HttpMethod": "GET",
     "IsController": true,
@@ -167,7 +167,7 @@
   },
   {
     "ContainingType": "ProdutoApi.Controllers.ProdutosController",
-    "Method": "GetById",
+    "Method": "GetProdutoById",
     "RelativePath": "api/Produtos/{id}",
     "HttpMethod": "GET",
     "IsController": true,

@@ -18,7 +18,7 @@ namespace ProdutoApi.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ProdutoDTO>>> Get()
+        public async Task<ActionResult<IEnumerable<ProdutoDTO>>> GetProdutos()
         {
             var produtoDto = await _produtoService.GetProdutos();
 
@@ -29,7 +29,7 @@ namespace ProdutoApi.Controllers
         }
 
         [HttpGet("{id:int}", Name = "GetProdutos")]
-        public async Task<ActionResult<IEnumerable<ProdutoDTO>>> GetById(int id)
+        public async Task<ActionResult<IEnumerable<ProdutoDTO>>> GetProdutoById(int id)
         {
             var produtoDto = await _produtoService.GetProdutoById(id);
 
@@ -48,7 +48,7 @@ namespace ProdutoApi.Controllers
 
             await _produtoService.AddProduto(produtoDto);
 
-            return new CreatedAtRouteResult("GetProduto", new { id = produtoDto.ProdutoId },
+            return new CreatedAtRouteResult("GetProdutos", new { id = produtoDto.ProdutoId },
                 produtoDto);
         }
 
@@ -74,10 +74,13 @@ namespace ProdutoApi.Controllers
             {
                 return NotFound("Produto not found") ;
             }
-
             await _produtoService.RemoveProduto(id);
 
-            return Ok(produtoDto);
+            return Ok(new
+            {
+                message = "Produto deletado com sucesso.",
+                produto = produtoDto
+            });
         }
 
 

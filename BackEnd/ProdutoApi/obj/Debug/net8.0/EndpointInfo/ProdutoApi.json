@@ -524,7 +524,7 @@
           "descricao",
           "estoque",
           "nome",
-          "price"
+          "preco"
         ],
         "type": "object",
         "properties": {
@@ -542,7 +542,7 @@
             "minLength": 5,
             "type": "string"
           },
-          "price": {
+          "preco": {
             "type": "number",
             "format": "double"
           },

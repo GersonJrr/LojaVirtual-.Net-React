@@ -22,7 +22,7 @@ namespace ProdutoApi.DTOs
 
         [Required(ErrorMessage = "The Price is Required")]
         [Column(TypeName = "decimal(12,2)")]
-        public decimal Price { get; set; }
+        public decimal Preco { get; set; }
 
         [Required(ErrorMessage = "The Stock is Required")]
         [Range(1, 9999)]
@@ -33,9 +33,9 @@ namespace ProdutoApi.DTOs
         public string? ImageURL { get; set; }
 
         public string? CategoriaNome { get; set; }
-
-        public int CategoriaId { get; set; }
+       
         [JsonIgnore]
         public Categoria? Categoria { get; set; }
+        public int CategoriaId { get; set; }
     }
 }

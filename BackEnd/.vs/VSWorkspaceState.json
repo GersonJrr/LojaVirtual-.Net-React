@@ -2,8 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\ProdutoApi",
-    "\\ProdutoApi\\Context"
+    "\\ProdutoApi\\Controllers"
   ],
-  "SelectedNode": "\\ProdutoApi.sln",
+  "SelectedNode": "\\ProdutoApi\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
