@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --cor-vermelho-bg: #eb0b0b;
+  --cor-vermelho-bg: #860b0bfd;
 }
 :root {
   --cor-bege: #E5E8EB;
@@ -21,3 +21,4 @@
 body {
   font-family: var(--font-plusjakarta);
 }
+
