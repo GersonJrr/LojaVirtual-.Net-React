@@ -4,7 +4,7 @@ import Pizza3 from "../../../assets/pizza3.png";
 
 function SecondSection() {
   return (
-    <div className="px-4 py-8">
+    <section className="px-4 py-8">
       <h1 className="text-left text-[22px] font-bold mb-6">Nossas pizzas</h1>
 
       <div className="flex flex-wrap gap-25 justify-center sm:justify-start">
@@ -32,7 +32,7 @@ function SecondSection() {
           </span>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

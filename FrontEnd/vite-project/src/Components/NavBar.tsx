@@ -7,26 +7,58 @@ import LogoPizza from "../assets/LogoPizza.png";
 function NavBar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  const scrollToLocalizacao = () => {
+    const locationSection = document.getElementById("localizacao");
+    if (locationSection) {
+      locationSection.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsMobileMenuOpen(false);
+  };
+    const scrollToContato = () => {
+    const locationSection = document.getElementById("contato");
+    if (locationSection) {
+      locationSection.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsMobileMenuOpen(false);
+  };
+
   return (
-    <div className="w-full h-[69px] bg-[var(--cor-bege-bg)] flex items-center px-8 relative">
+    <section className="w-full h-[69px] bg-[var(--cor-bege-bg)] flex items-center px-8 relative">
       <div className="w-[149px] h-[40px] flex items-center">
         <img src={LogoPizza} alt="Logo pizzaria" className="h-full object-contain" />
       </div>
 
       <div className="hidden md:flex items-center ml-auto space-x-12">
         <div className="flex space-x-8 font-medium">
-          <span>Menu</span>
-          <span>Promoções</span>
-          <span>Localização</span>
-          <span>Contato</span>
+          <button className="border-b-2 border-transparent hover:border-[var(--cor-vermelho-bg)] transition-colors duration-300
+        ">
+            Menu
+          </button>
+
+          <button className="border-b-2 border-transparent hover:border-[var(--cor-vermelho-bg)] transition-colors duration-300
+        ">
+            Promoções
+          </button>
+
+          <button className="border-b-2 border-transparent hover:border-[var(--cor-vermelho-bg)] transition-colors duration-300
+        "
+          onClick={scrollToLocalizacao}>
+            Localização
+          </button>
+
+          <button className="border-b-2 border-transparent hover:border-[var(--cor-vermelho-bg)] transition-colors duration-300
+        "
+          onClick={scrollToContato}>
+            Contato
+          </button>
         </div>
         <div className="flex space-x-4 font-medium">
-          <span className="bg-[var(--cor-bege)] px-4 py-2 rounded-md cursor-pointer hover:bg-[var(--cor-vermelho-bg)] transition-colors">
+          <button className="bg-[var(--cor-bege)] text-black px-4 py-2 rounded-md cursor-pointer hover:bg-[var(--cor-vermelho-bg)] hover:text-white transition-colors">
             <Link to="/login">Entrar</Link>
-          </span>
-          <span className="bg-[var(--cor-bege)] px-4 py-2 rounded-md cursor-pointer flex items-center justify-center hover:bg-[var(--cor-vermelho-bg)] transition-colors">
+          </button>
+          <button className="bg-[var(--cor-bege)] px-4 py-2 rounded-md cursor-pointer flex items-center justify-center hover:bg-[var(--cor-vermelho-bg)] transition-colors hover:text-white">
             <AiOutlineShoppingCart size={20} />
-          </span>
+          </button>
         </div>
       </div>
       <button
@@ -37,10 +69,10 @@ function NavBar() {
       </button>
       {isMobileMenuOpen && (
         <div className="absolute top-[69px] left-0 w-full bg-[var(--cor-bege-bg)] flex flex-col items-start p-6 space-y-4 md:hidden z-50 shadow-md">
-          <span>Menu</span>
-          <span>Promoções</span>
-          <span>Localização</span>
-          <span>Contato</span>
+          <button>Menu</button>
+          <button>Promoções</button>
+          <button onClick={scrollToLocalizacao}>Localização</button>
+          <button onClick={scrollToContato}>Contato</button>
           <Link
             to="/login"
             className="bg-[var(--cor-bege)] px-4 py-2 rounded-md hover:bg-[var(--cor-vermelho-bg)] transition-colors w-full text-center"
@@ -52,7 +84,7 @@ function NavBar() {
           </span>
         </div>
       )}
-    </div>
+    </section>
   );
 }
 

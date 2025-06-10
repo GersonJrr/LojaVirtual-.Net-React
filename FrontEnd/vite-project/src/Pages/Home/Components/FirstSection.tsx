@@ -2,7 +2,7 @@ import bgPizza from "../../../assets/bgPizza.svg";
 
 function FirstSection() {
   return (
-    <div className="relative ">
+    <section className="relative mt-[-52px] sm:mt-0">
       <img
         src={bgPizza}
         alt="pizza background"
@@ -14,11 +14,11 @@ function FirstSection() {
         <p className="text-base font-normal mb-6 max-w-md">
           A melhor pizza da cidade, entregue quentinha na sua porta.
         </p>
-        <button className="bg-[var(--cor-vermelho-bg)] text-white px-6 py-2 rounded hover:bg-[var(--cor-bege-claro)] transition">
+        <button className="bg-[var(--cor-vermelho-bg)] px-6 py-2 rounded hover:opacity-50 transition-opacity">
           Ver Menu
         </button>
       </div>
-    </div>
+    </section>
   );
 }
 

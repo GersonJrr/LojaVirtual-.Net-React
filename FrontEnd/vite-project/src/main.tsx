@@ -8,14 +8,15 @@ import ShopPage from './Pages/Shop/ShopPage'
 
 
 
+
 createRoot(document.getElementById('root')!).render(
   <BrowserRouter>
   <Routes>
     <Route path="/" element={<HomePage/>} />
     <Route path="/Login" element={<LoginPage />} />
     <Route path="/Shop" element={<ShopPage />} />
-   
     
+   
   </Routes>
 </BrowserRouter>
 )
