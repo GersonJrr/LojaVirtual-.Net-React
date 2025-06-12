@@ -1,9 +1,10 @@
 import Footer from "../../Components/Footer";
 import NavBar from "../../Components/NavBar"
 import FirstSection from "./Components/FirstSection";
-import SecondSection from "./Components/SecondSection";
 import RecomendadoSection from "../../Components/RecomendadoSection";
 import LocalizacaoContato from "./Components/LocalizacaoContato";
+import EsfihasSection from "./Components/EsfihasSection";
+import PizzaSection from "./Components/PizzaSection";
 
 
 
@@ -14,9 +15,10 @@ function HomePage() {
       <NavBar/>
       <div className="w-full h-px bg-gray-200 " />
 
-      <div className="flex flex-col items-center mt-13">
+      <div className="flex flex-col items-center mt-13 gap-10">
         <FirstSection/>
-        <SecondSection/>
+        <PizzaSection/>
+        <EsfihasSection/>
         <RecomendadoSection/>
         <LocalizacaoContato/>
 

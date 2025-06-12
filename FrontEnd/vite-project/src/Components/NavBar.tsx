@@ -2,7 +2,7 @@ import { useState } from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { HiOutlineMenu, HiX } from "react-icons/hi";
 import { Link } from "react-router-dom";
-import LogoPizza from "../assets/LogoPizza.png";
+
 
 function NavBar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -25,7 +25,7 @@ function NavBar() {
   return (
     <section className="w-full h-[69px] bg-[var(--cor-bege-bg)] flex items-center px-8 relative">
       <div className="w-[149px] h-[40px] flex items-center">
-        <img src={LogoPizza} alt="Logo pizzaria" className="h-full object-contain" />
+        <img src="https://mysitefotos.s3.us-east-1.amazonaws.com/LogoPizza.png" alt="Logo pizzaria" className="h-full object-contain" />
       </div>
 
       <div className="hidden md:flex items-center ml-auto space-x-12">

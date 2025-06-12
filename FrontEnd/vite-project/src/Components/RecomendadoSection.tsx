@@ -1,6 +1,3 @@
-import Bebidas from "../assets/Bebidas.png";
-import acompanhamentos from "../assets/acompanhamentos.png";
-import sobremesas from "../assets/sobremesas.png";
 
 function RecomendadoSection() {
   return (
@@ -9,7 +6,7 @@ function RecomendadoSection() {
 
       <div className="flex flex-wrap gap-25 justify-center sm:justify-start">
         <div className="w-[301px] text-center">
-          <img src={Bebidas} alt="Pizza img" className="w-full h-70 object-cover rounded-md mb-4" />
+          <img src="https://mysitefotos.s3.us-east-1.amazonaws.com/Bebidas.png"alt="Pizza img" className="w-full h-70 object-cover rounded-md mb-4" />
           <p className="font-bold text-lg">Bebidas</p>
           <span className="text-sm text-gray-600">
             Refrigerantes, sucos e cervejas para acompanhar sua pizza.
@@ -17,7 +14,7 @@ function RecomendadoSection() {
         </div>
 
         <div className="w-[301px] text-center">
-          <img src={acompanhamentos} alt="Pizza img" className="w-full h-70 object-cover rounded-md mb-4" />
+          <img src="https://mysitefotos.s3.us-east-1.amazonaws.com/acompanhamentos.png" alt="Pizza img" className="w-full h-70 object-cover rounded-md mb-4" />
           <p className="font-bold text-lg">Sobremesas</p>
           <span className="text-sm text-gray-600">
             Doces e sobremesas para finalizar sua refeição.
@@ -25,7 +22,7 @@ function RecomendadoSection() {
         </div>
 
        <div className="w-[301px] text-center">
-          <img src={sobremesas} alt="Pizza img" className="w-full h-70 object-cover rounded-md mb-4" />
+          <img src="https://mysitefotos.s3.us-east-1.amazonaws.com/sobremesas.png" alt="Pizza img" className="w-full h-70 object-cover rounded-md mb-4" />
           <p className="font-bold text-lg">Acompanhamentos</p>
           <span className="text-sm text-gray-600">
             Pão de alho, batata frita e outros acompanhamentos.

@@ -1,10 +1,10 @@
-import Pizza1 from "../../../assets/pizza1.png";
-import Pizza2 from "../../../assets/pizza2.png";
-import Pizza3 from "../../../assets/pizza3.png";
+import Pizza1 from "../../../assets/Pizza1.png";
+import Pizza2 from "../../../assets/Pizza2.png";
+import Pizza3 from "../../../assets/Pizza3.png";
 
-function SecondSection() {
+function PizzaSection() {
   return (
-    <section className="px-4 py-8">
+     <section className="px-4 py-8">
       <h1 className="text-left text-[22px] font-bold mb-6">Nossas pizzas</h1>
 
       <div className="flex flex-wrap gap-25 justify-center sm:justify-start">
@@ -36,5 +36,5 @@ function SecondSection() {
   );
 }
 
-export default SecondSection;
+export default PizzaSection;
 

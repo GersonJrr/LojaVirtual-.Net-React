@@ -1,6 +1,3 @@
-import xIcon from "../assets/xIcon.svg";
-import facebook from "../assets/facebook.svg";
-import instagram from "../assets/instagram.svg";
 
 function Footer() {
   return (
@@ -13,9 +10,9 @@ function Footer() {
       </div>
 
       <div className="flex space-x-10">
-        <img src={xIcon} alt="X Icon" className="w-6 h-6" />
-        <img src={facebook} alt="Facebook Icon" className="w-6 h-6" />
-        <img src={instagram} alt="Instagram Icon" className="w-6 h-6" />
+        <img src="https://mysitefotos.s3.us-east-1.amazonaws.com/xIcon.svg" alt="X Icon" className="w-6 h-6" />
+        <img src="https://mysitefotos.s3.us-east-1.amazonaws.com/facebook.svg" alt="Facebook Icon" className="w-6 h-6" />
+        <img src="https://mysitefotos.s3.us-east-1.amazonaws.com/instagram.svg" alt="Instagram Icon" className="w-6 h-6" />
       </div>
 
       <div>
