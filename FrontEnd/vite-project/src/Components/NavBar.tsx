@@ -25,15 +25,22 @@ function NavBar() {
   return (
     <section className="w-full h-[69px] bg-[var(--cor-bege-bg)] flex items-center px-8 relative">
       <div className="w-[149px] h-[40px] flex items-center">
-        <img src="https://mysitefotos.s3.us-east-1.amazonaws.com/LogoPizza.png" alt="Logo pizzaria" className="h-full object-contain" />
+        <Link
+        to="/"
+          >
+         <img src="https://mysitefotos.s3.us-east-1.amazonaws.com/LogoPizza.png" alt="Logo pizzaria" className="h-full object-contain" />
+        </Link>
       </div>
 
       <div className="hidden md:flex items-center ml-auto space-x-12">
         <div className="flex space-x-8 font-medium">
-          <button className="border-b-2 border-transparent hover:border-[var(--cor-vermelho-bg)] transition-colors duration-300
-        ">
-            Menu
-          </button>
+          <Link
+            to="/Cardapio">
+            <button className="border-b-2 border-transparent hover:border-[var(--cor-vermelho-bg)] transition-colors duration-300
+          ">
+              Cardápio
+            </button>
+          </Link>
 
           <button className="border-b-2 border-transparent hover:border-[var(--cor-vermelho-bg)] transition-colors duration-300
         ">

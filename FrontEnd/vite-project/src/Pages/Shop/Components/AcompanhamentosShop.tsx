@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 import CardProduto from "../../../Components/CardProduto";
 import type { Produto } from "../../../Interface/Produto";
 
-export default function PizzaShop() {
+export default function AcompanhamentosShop() {
   const [produtos, setProdutos] = useState<Produto[]>([]);
   const [limite, setLimite] = useState(6);
-  
-  useEffect(() => {
+
+    useEffect(() => {
     const carregarProdutos = async () => {
       try {
         const response = await fetch("https://localhost:7145/api/Categorias/produtos");
@@ -14,7 +14,7 @@ export default function PizzaShop() {
 
         const data = await response.json();
 
-        const categoriaPizza = data.find((cat: any) => cat.categoriaId === 1);
+        const categoriaPizza = data.find((cat: any) => cat.categoriaId === 8);
 
         if (categoriaPizza && categoriaPizza.produtos) {
           setProdutos(categoriaPizza.produtos);
@@ -26,23 +26,21 @@ export default function PizzaShop() {
         console.error("Erro ao carregar produtos:", error);
       }
     };
-
-  carregarProdutos();
-}, []);
-
+    carregarProdutos();
+  }, []);
 
   return (
     <div className="px-4 py-8">
       <div className="flex justify-center">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-40 gap-6">
-          {produtos.slice(0, limite).map((pizza) => (
+          {produtos.slice(0, limite).map((acompanhamentos) => (
             <CardProduto
-              key={pizza.id}
-              id={pizza.id}
-              nome={pizza.nome}
-              preco={pizza.preco}
-              descricao={pizza.descricao}
-              imageURL={pizza.imageURL}
+              key={acompanhamentos.id}
+              id={acompanhamentos.id}
+              nome={acompanhamentos.nome}
+              preco={acompanhamentos.preco}
+              descricao={acompanhamentos.descricao}
+              imageURL={acompanhamentos.imageURL}
             />
           ))}
         </div>

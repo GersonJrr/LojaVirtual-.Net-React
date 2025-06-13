@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Pizza1 from "../../../assets/Pizza1.png";
 import Pizza2 from "../../../assets/Pizza2.png";
 import Pizza3 from "../../../assets/Pizza3.png";
@@ -9,7 +10,9 @@ function PizzaSection() {
 
       <div className="flex flex-wrap gap-25 justify-center sm:justify-start">
         <div className="w-[301px] h-[169px] p-4 text-center">
+          <Link to="/Pizzas">
           <img src={Pizza1} alt="Pizza img" className="w-full h-40 object-cover rounded-md mb-4" />
+          </Link>
           <p className="font-bold text-lg">Pizza Calabresa</p>
           <span className="text-sm text-gray-600">
             Deliciosa pizza com calabresa, cebola e azeitonas.

@@ -1,4 +1,5 @@
 import bgPizza from "../../../assets/bgPizza.svg";
+import { Link } from "react-router-dom";
 
 function FirstSection() {
   return (
@@ -14,9 +15,12 @@ function FirstSection() {
         <p className="text-base font-normal mb-6 max-w-md">
           A melhor pizza da cidade, entregue quentinha na sua porta.
         </p>
-        <button className="bg-[var(--cor-vermelho-bg)] px-6 py-2 rounded hover:opacity-50 transition-opacity">
-          Ver Menu
-        </button>
+        <Link
+          to="/Cardapio">
+          <button className="bg-[var(--cor-vermelho-bg)] px-6 py-2 rounded hover:opacity-50 transition-opacity">
+            Cardápio
+          </button>
+        </Link>
       </div>
     </section>
   );
