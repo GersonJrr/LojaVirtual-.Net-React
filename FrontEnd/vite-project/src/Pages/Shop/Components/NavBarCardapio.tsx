@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function NavBarCardapio() {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -16,11 +17,15 @@ function NavBarCardapio() {
   return (
     <nav className="sticky top-0 z-50 bg-white w-full border-b border-gray-200 h-[60px] overflow-x-auto scrollbar-hide">
       <div className="flex items-center justify-center gap-6 min-w-[700px] h-full px-4 whitespace-nowrap">
-        <img
-          src="https://mysitefotos.s3.us-east-1.amazonaws.com/LogoPizza.png"
-          alt="Logo pizzaria"
-          className="object-contain h-[32px]"
-        />
+        <Link
+        to="/"
+        >
+          <img
+            src="https://mysitefotos.s3.us-east-1.amazonaws.com/LogoPizza.png"
+            alt="Logo pizzaria"
+            className="object-contain h-[32px]"
+          />
+        </Link>
 
         {items.map((label, index) => (
           <button
